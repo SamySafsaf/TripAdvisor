@@ -19,7 +19,26 @@ h1 {
 h1 span {
     color: #ff5d5d;
 }
-
+h2 {
+    font-size: 28px;
+    font-family: "Trip Sans Med";
+    font-weight: 700;
+    width: 100%;
+    margin-bottom: 90px;
+    text-align: center;
+    line-height: 0.1em;
+    border-bottom: 1px solid black;
+}
+h2 span {
+    background: #fff;
+    padding: 0 10px;
+}
+h3 {
+    font-size: 32px;
+    font-family: "Trip Sans Med";
+    margin-bottom: 25px;
+    font-weight: 700;
+}
 /* ------------------- */
 /* HEADER */
 /* ------------------- */
@@ -120,8 +139,9 @@ header button {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
-.pictures .col-1 img:hover {
-    opacity: 1;
+.pictures .col-1 img:hover,
+.pictures .col-2 img:hover {
+    opacity: 0.7;
 }
 
 .pictures .col-2 {
@@ -136,9 +156,47 @@ header button {
 
     /* display: block; */
 }
+
 .pictures .col-2 img:nth-child(1) {
     border-top-right-radius: 20px;
 }
 .pictures .col-2 img:nth-child(2) {
     border-bottom-right-radius: 20px;
+}
+
+.infosCity {
+    display: flex;
+    margin-bottom: 90px;
+}
+.infosCity div {
+    flex: 1;
+}
+.infosCity > div > p {
+    font-size: 20px;
+}
+.infosCity img {
+    height: 425px;
+    width: 528px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.advicesMenu {
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 90px;
+}
+.advicesMenu div {
+    border: 2px solid lightgrey;
+    padding: 15px;
+    border-radius: 10px;
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    height: 30px;
+    align-items: center;
+}
+.advicesMenu div:not(:last-child) {
+    margin-right: 25px;
 }
