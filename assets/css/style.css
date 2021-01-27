@@ -1,0 +1,144 @@
+/* ------------------- */
+/* GLOBAL RULES */
+/* ------------------- */
+body {
+    font-family: "Trip Sans Reg";
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 54px;
+    font-family: "Trip Sans Med";
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+h1 span {
+    color: #ff5d5d;
+}
+
+/* ------------------- */
+/* HEADER */
+/* ------------------- */
+header {
+    background-color: #fff;
+    height: 60px;
+    margin-bottom: 50px;
+}
+
+header .container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    width: 188px;
+}
+
+header nav {
+    /* background-color: pink; */
+    display: flex;
+    align-items: center;
+}
+
+header nav div {
+    margin-right: 20px;
+}
+
+header nav i {
+    margin-right: 5px;
+}
+
+header button {
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    border: none;
+    padding: 5px;
+    border-radius: 30px;
+    font-family: inherit;
+    outline: none;
+    cursor: pointer;
+}
+
+/* ------------------- */
+/* MAIN */
+/* ------------------- */
+
+/* Navigation menu */
+.navigation-menu {
+    margin-bottom: 50px;
+    display: flex;
+}
+
+.navigation-menu div {
+    border: black solid 2px;
+    border-radius: 15px;
+    flex: 1;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation-menu div:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.navigation-menu div:not(:last-child) {
+    margin-right: 20px;
+}
+
+/* Pictures */
+.pictures {
+    height: 430px;
+    /* background-color: pink; */
+    margin-bottom: 60px;
+    display: flex;
+}
+
+.pictures .col-1 {
+    /* background-color: lightgreen; */
+    height: 100%;
+
+    /* Occupe toute la largeur disponible avec le flex : 1 */
+    flex: 1;
+
+    margin-right: 3px;
+}
+
+.pictures .col-1 img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.pictures .col-1 img:hover {
+    opacity: 1;
+}
+
+.pictures .col-2 {
+    height: 100%;
+    width: 480px;
+}
+
+.pictures .col-2 img {
+    width: 100%;
+    height: calc(50% - 1.5px);
+    object-fit: cover;
+
+    /* display: block; */
+}
+.pictures .col-2 img:nth-child(1) {
+    border-top-right-radius: 20px;
+}
+.pictures .col-2 img:nth-child(2) {
+    border-bottom-right-radius: 20px;
+}
